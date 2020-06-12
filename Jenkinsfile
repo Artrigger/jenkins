@@ -1,8 +1,8 @@
 pipeline {
     agent { docker { image 'node:6.3' } }
-    options {
-        buildDiscarder(logRotator(numToKeepStr: '2'))
-    }
+    // options {
+    //     buildDiscarder(logRotator(numToKeepStr: '2'))
+    // }
     stages {
         stage('build') {
             steps {
