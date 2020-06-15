@@ -3,9 +3,10 @@ pipeline {
     agent {
         kubernetes {
             containerTemplate {
-            name 'node'
-            image 'node:6.3'
-            ttyEnabled true
+                name 'node'
+                image 'node:6.3'
+                ttyEnabled true
+            }
         }
     }
     // options {
